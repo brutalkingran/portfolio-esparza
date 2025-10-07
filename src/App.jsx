@@ -1,5 +1,5 @@
 import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
+import Introduction from "./components/Introduction";
 import Projects from "./components/Projects";
 import Footer from "./components/Footer";
 
@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="font-sans">
       <Navbar />
-      <Hero />
+      <Introduction />
       <Projects />
       <Footer />
     </div>
