@@ -37,6 +37,7 @@
 
   html {
     font-family: sans-serif;
+    background: oklch(21% 0.034 264.665);
   }
 
   .clip-diagonal {
