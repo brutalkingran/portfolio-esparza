@@ -1,3 +1,6 @@
+import FigureComponent from "./FigureComponent";
+import FigureSweepComponent from "./FigureSweepComponent";
+
 const Projects = () => {
   return (
   <>
@@ -8,23 +11,55 @@ const Projects = () => {
             Tu presencia en línea importa
           </h2>
 
-          <p className="mt-15 font-sans text-2xl">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex fugit dolore velit natus, atque repellendus neque minima qui. Aut fuga maiores repudiandae corporis sapiente accusantium velit molestiae harum dolore autem?
-            Sit cum vero, at omnis aliquid expedita. Rem expedita, modi blanditiis voluptas voluptatibus, ab totam sed et ea est assumenda quasi autem qui veniam animi deleniti eveniet quos pariatur doloribus!
-            Dolor similique voluptas error molestiae impedit sint porro. Distinctio, molestias reprehenderit nostrum et sequi doloremque tempore voluptatum sapiente at maxime incidunt natus quibusdam velit suscipit. Expedita placeat magnam in hic.
-            Fugiat quisquam, animi fuga et est velit nulla aspernatur blanditiis eius, quam fugit maxime incidunt temporibus magni obcaecati molestias aut earum. Eos nihil iusto explicabo facilis iste fugit maxime amet!
-          </p>
+          <div className="mt-15 font-sans text-2xl">
+            <p>
+              Contar con tu propio sitio web para tu emprendimiento es una decisión que podría ahorrarte problemas a largo plazo.
+              Después de todo, es tu propio espacio, nada de lidiar con algoritmos traicioneros o diseños que no se ajustan a tus gustos.
+            </p>
+            <p>
+              Con tu propio sitio web las posiblidades son infinitas: los resultados de las búsquedas de Google mostrarán a tu emprendimiento antes que otros,
+              podrás generar ingresos pasivos con anuncios e incluso podrías ahorrarte mil y un dolores de cabeza.
+            </p>
+            <p>
+              Pensá en ese ChatBot que soluciona las dudas de tus clientes por vos, ese programa que automatiza las tareas más tediosas o en aquel espacio donde
+              centras todos tus contactos para que no te pregunten siempre si contás con X red social.
+            </p>
+            <p>
+              A tu derecha podrás ver proyectos de ejemplo que se podrían ajustar a tus necesidades.
+            </p>
+          </div>
         </div>
-        
-        <figure className="flex flex-col items-center w-2/5 mt-15 mr-20">
-          <h3 className="skew-y-7 text-3xl mb-2">Title</h3>
 
-          <img src="cartx.jpg" alt="" className="skew-y-7 w-full"/>
-          
-          <figcaption className="skew-y-7 text-center mt-5 font-medium w-2/3">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. A expedita provident molestiae nostrum dolorum itaque iure aliquid vero mollitia eligendi? Neque numquam eius vero necessitatibus at, impedit nisi molestias! Tempore!
-          </figcaption>
-        </figure>
+        <FigureSweepComponent>
+          <FigureComponent
+            title="Proyecto: Página de Turismo"
+            imgSrc="spatium"
+            description="Plataforma de streaming similar a Netflix. Brinda una interfaz cómoda para el usuario, con vista disponible para móviles y escritorio. Cuenta con modo claro y oscuro."
+            pageLink="kinematic-movies.netlify.app"
+            pageRepository="kinetic-movie-page"
+          />
+          <FigureComponent
+            title="Proyecto: Landing Page de Ventas"
+            imgSrc="guncat"
+            description="Plataforma de streaming similar a Netflix. Brinda una interfaz cómoda para el usuario, con vista disponible para móviles y escritorio. Cuenta con modo claro y oscuro."
+            pageLink="kinematic-movies.netlify.app"
+            pageRepository="kinetic-movie-page"
+          />
+          <FigureComponent
+            title="Proyecto: Aplicación de Streaming"
+            imgSrc="kinematic"  
+            description="Plataforma de streaming similar a Netflix. Brinda una interfaz cómoda para el usuario, con vista disponible para móviles y escritorio. Cuenta con modo claro y oscuro."
+            pageLink="kinematic-movies.netlify.app"
+            pageRepository="kinetic-movie-page"
+          />
+          <FigureComponent
+            title="Proyecto: Tienda Virtual"
+            imgSrc="cartx"
+            description="Plataforma de streaming similar a Netflix. Brinda una interfaz cómoda para el usuario, con vista disponible para móviles y escritorio. Cuenta con modo claro y oscuro."
+            pageLink="kinematic-movies.netlify.app"
+            pageRepository="kinetic-movie-page"
+          />
+        </FigureSweepComponent>
       </div>
     </section>
 
@@ -32,22 +67,23 @@ const Projects = () => {
       <div className="-skew-y-6 pt-20 px-10 flex flex-row-reverse justify-between">
         <div className="w-1/2 mr-25">
           <h2 className="text-6xl">
-            Tu presencia en línea importa
+            Tu sitio web, tu hogar.
           </h2>
 
           <p className="mt-15 font-sans text-2xl">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex fugit dolore velit natus, atque repellendus neque minima qui. Aut fuga maiores repudiandae corporis sapiente accusantium velit molestiae harum dolore autem?
-            Sit cum vero, at omnis aliquid expedita. Rem expedita, modi blanditiis voluptas voluptatibus, ab totam sed et ea est assumenda quasi autem qui veniam animi deleniti eveniet quos pariatur doloribus!
-            Dolor similique voluptas error molestiae impedit sint porro. Distinctio, molestias reprehenderit nostrum et sequi doloremque tempore voluptatum sapiente at maxime incidunt natus quibusdam velit suscipit. Expedita placeat magnam in hic.
-            Fugiat quisquam, animi fuga et est velit nulla aspernatur blanditiis eius, quam fugit maxime incidunt temporibus magni obcaecati molestias aut earum. Eos nihil iusto explicabo facilis iste fugit maxime amet!
+            Obtenga datos de suma importancia que le permitan determinar cuál será el próximo paso que su negocio tomará para seguir progresando.
+          </p>
+
+          <p>
+            Muchas redes sociales se quedan con la información de sus usuarios (y sus clientes), datos que usted podría usar a su favor.
           </p>
         </div>
-        
+
         <figure className="flex flex-col items-center w-2/5 mt-15 -skew-y-7">
           <h3 className="text-3xl mb-2">Title</h3>
 
-          <img src="cartx.jpg" alt="" className="w-full"/>
-          
+          <img src="cartx.jpg" alt="" className="w-full" />
+
           <figcaption className="text-center mt-5 font-medium w-2/3">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. A expedita provident molestiae nostrum dolorum itaque iure aliquid vero mollitia eligendi? Neque numquam eius vero necessitatibus at, impedit nisi molestias! Tempore!
           </figcaption>
@@ -59,22 +95,25 @@ const Projects = () => {
       <div className="-skew-y-6 pt-20 px-10 flex flex-row justify-between">
         <div className="w-1/2">
           <h2 className="text-6xl">
-            Tu presencia en línea importa
+            El motor de búsqueda, tu mejor aliado
           </h2>
 
           <p className="mt-15 font-sans text-2xl">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex fugit dolore velit natus, atque repellendus neque minima qui. Aut fuga maiores repudiandae corporis sapiente accusantium velit molestiae harum dolore autem?
-            Sit cum vero, at omnis aliquid expedita. Rem expedita, modi blanditiis voluptas voluptatibus, ab totam sed et ea est assumenda quasi autem qui veniam animi deleniti eveniet quos pariatur doloribus!
-            Dolor similique voluptas error molestiae impedit sint porro. Distinctio, molestias reprehenderit nostrum et sequi doloremque tempore voluptatum sapiente at maxime incidunt natus quibusdam velit suscipit. Expedita placeat magnam in hic.
-            Fugiat quisquam, animi fuga et est velit nulla aspernatur blanditiis eius, quam fugit maxime incidunt temporibus magni obcaecati molestias aut earum. Eos nihil iusto explicabo facilis iste fugit maxime amet!
+            Sea el primero, la web le permite optimizar los resultados de búsqueda de Google para que su emprendimiento aparezca primero.
+          </p>
+
+          <p>
+            Es sabido que los usuarios no suelen hindagar mucho en los resultados de búsqueda, mucho menos investigar luego del resultado número uno.
+            Imagine que su emprendimiento es la primera impresión de un usuario, algo que en plena era de la información no tiene precio, usted está generando
+            impresiones.
           </p>
         </div>
-        
+
         <figure className="flex flex-col items-center w-2/5 mt-15 mr-20">
           <h3 className="skew-y-7 text-3xl mb-2">Title</h3>
 
-          <img src="cartx.jpg" alt="" className="skew-y-7 w-full"/>
-          
+          <img src="cartx.jpg" alt="" className="skew-y-7 w-full" />
+
           <figcaption className="skew-y-7 text-center mt-5 font-medium w-2/3">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. A expedita provident molestiae nostrum dolorum itaque iure aliquid vero mollitia eligendi? Neque numquam eius vero necessitatibus at, impedit nisi molestias! Tempore!
           </figcaption>

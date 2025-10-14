@@ -22,7 +22,7 @@ export const Introduction = () => {
           <p className="text-white mt-5 text-center text-2xl">
             Desarrollador Web Freelancer<BlinkingText />
           </p>
-          <pre className="absolute right-100 top-35 text-white text-xs font-mono whitespace-pre leading-none z-10 opacity-70">
+          <pre className="absolute right-1/6 top-35 text-white text-xs font-mono whitespace-pre leading-none z-10 opacity-70">
 {String.raw`
                  @@@@@@%@%%@@@@@                 
              @@#++++++++@++++++++*@@             
