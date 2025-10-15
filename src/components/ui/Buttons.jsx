@@ -10,11 +10,13 @@ export const NavButton = ({ extraStyle, text, action }) => {
 
 export const ContactLink = ({ extraStyle, text, logo, action}) => {
   return (
-    <li className= { `bg-rose-600 rounded-full p-2 w-full hover:bg-rose-800 transition-all ${extraStyle}` } >
-      <a className="flex flex-row items-center" href={action}>
+    <li className={ `flex flex-row items-center bg-rose-600 rounded-full p-2 w-full hover:bg-rose-800 transition-all ${extraStyle}` } >
+      <a className="items-center" href={action}>
         {logo}
-        {text}
       </a>
+      <span className="hidden md:block">
+        {text}
+      </span>
     </li>
   )
 }

@@ -5,44 +5,44 @@ const Projects = () => {
   return (
   <>
     <section id="projects" className="py-16 bg-white dark:bg-gray-900 text-gray-900 relative h-screen clip-diagonal skew-y-6 -mt-25 font-light">
-      <div className="-skew-y-6 pt-20 px-10 flex flex-row justify-between">
+      <div className="-skew-y-6 pt-20 px-10 flex md:flex-row justify-between">
         <div className="w-1/2">
-          <h2 className="text-6xl">
+          <h2 className="md:text-6xl text-5xl">
             Tu presencia en línea importa
           </h2>
 
           <div className="mt-15 font-sans text-2xl">
             <p>
-              Contar con tu propio sitio web para tu emprendimiento es una decisión que podría ahorrarte problemas a largo plazo.
-              Después de todo, es tu propio espacio, nada de lidiar con algoritmos traicioneros o diseños que no se ajustan a tus gustos.
+              Contar con <strong className="underline">tu propio sitio web</strong> para tu emprendimiento es una decisión que podría ahorrarte problemas a largo plazo.
+              Después de todo, <strong className="font-black">es tu propio espacio</strong>, sin tener que lidiar con algoritmos traicioneros o diseños que no se ajusten a tus gustos.
             </p>
 
             <p className="mt-5">
-              Con tu propio sitio web las posiblidades son infinitas: los resultados de las búsquedas de Google mostrarán a tu emprendimiento antes que otros,
-              podrás generar ingresos pasivos con anuncios e incluso podrías ahorrarte mil y un dolores de cabeza.
+              Con tu propio sitio web, las posibilidades son <strong className="underline">infinitas</strong>: los resultados de búsqueda en <strong className="font-black">Google</strong> mostrarán a tu emprendimiento antes que otros,
+              podrás generar ingresos pasivos con anuncios, e incluso podrías ahorrarte <strong className="underline">mil y un dolores de cabeza</strong>.
             </p>
 
             <p className="mt-5">
-              Pensá en ese ChatBot que soluciona las dudas de tus clientes por vos, ese programa que automatiza las tareas más tediosas o en aquel espacio donde
-              centras todos tus contactos para que no te pregunten siempre si contás con X red social.
+              Pensá en ese <strong className="font-black">ChatBot</strong> que responde automáticamente las dudas de tus clientes, en una aplicación que facilita o automatiza tareas tediosas,
+              o en un espacio donde <strong className="underline">centralizás todos tus contactos</strong> para que no tengan que preguntarte si contás con X red social.
             </p>
           </div>
         </div>
 
         <FigureSweepComponent>
           <FigureComponent
-            title="Proyecto: Página de Turismo"
+            title="Proyecto: página de turismo"
             imgSrc="spatium"
-            description="Plataforma de streaming similar a Netflix. Brinda una interfaz cómoda para el usuario, con vista disponible para móviles y escritorio. Cuenta con modo claro y oscuro."
-            pageLink="kinematic-movies.netlify.app"
-            pageRepository="kinetic-movie-page"
+            description="Sitio web que funciona a modo de plantilla completa (inicio, acerca de, contacto, etc.) para una plataforma de viajes. Funciona para móviles y dispositivos de escritorio. Cuenta con un diseño y estilo moderno que resultan cómodo y fácil de navegar."
+            pageLink="spatiumviajes.netlify.app"
+            pageRepository="spatium-travel-website"
           />
           <FigureComponent
-            title="Proyecto: Landing Page de Ventas"
+            title="Proyecto: landing page"
             imgSrc="guncat"
-            description="Plataforma de streaming similar a Netflix. Brinda una interfaz cómoda para el usuario, con vista disponible para móviles y escritorio. Cuenta con modo claro y oscuro."
-            pageLink="kinematic-movies.netlify.app"
-            pageRepository="kinetic-movie-page"
+            description="Página principal de un sitio de ventas/e-commerce. Cuenta con una interfaz vistosa y animaciones que dotan al sitio web de profesionalidad."
+            pageLink="guncat.netlify.app"
+            pageRepository="gun-cat"
           />
           <FigureComponent
             title="Proyecto: Aplicación de Streaming"
@@ -54,9 +54,9 @@ const Projects = () => {
           <FigureComponent
             title="Proyecto: Tienda Virtual"
             imgSrc="cartx"
-            description="Plataforma de streaming similar a Netflix. Brinda una interfaz cómoda para el usuario, con vista disponible para móviles y escritorio. Cuenta con modo claro y oscuro."
-            pageLink="kinematic-movies.netlify.app"
-            pageRepository="kinetic-movie-page"
+            description="Selección de productos para una tienda. Cuenta con modos claros y oscuros, así como una sencilla pero eficiente interfaz."
+            pageLink="cartx-store.netlify.app"
+            pageRepository="shop-react"
           />
         </FigureSweepComponent>
       </div>
