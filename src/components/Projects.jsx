@@ -16,16 +16,15 @@ const Projects = () => {
               Contar con tu propio sitio web para tu emprendimiento es una decisión que podría ahorrarte problemas a largo plazo.
               Después de todo, es tu propio espacio, nada de lidiar con algoritmos traicioneros o diseños que no se ajustan a tus gustos.
             </p>
-            <p>
+
+            <p className="mt-5">
               Con tu propio sitio web las posiblidades son infinitas: los resultados de las búsquedas de Google mostrarán a tu emprendimiento antes que otros,
               podrás generar ingresos pasivos con anuncios e incluso podrías ahorrarte mil y un dolores de cabeza.
             </p>
-            <p>
+
+            <p className="mt-5">
               Pensá en ese ChatBot que soluciona las dudas de tus clientes por vos, ese programa que automatiza las tareas más tediosas o en aquel espacio donde
               centras todos tus contactos para que no te pregunten siempre si contás con X red social.
-            </p>
-            <p>
-              A tu derecha podrás ver proyectos de ejemplo que se podrían ajustar a tus necesidades.
             </p>
           </div>
         </div>
@@ -70,13 +69,15 @@ const Projects = () => {
             Tu sitio web, tu hogar.
           </h2>
 
-          <p className="mt-15 font-sans text-2xl">
-            Obtenga datos de suma importancia que le permitan determinar cuál será el próximo paso que su negocio tomará para seguir progresando.
-          </p>
+          <div className="mt-15 font-sans text-2xl">
+            <p>
+              Obtenga datos de suma importancia que le permitan determinar cuál será el próximo paso que su negocio tomará para seguir progresando.
+            </p>
 
-          <p>
-            Muchas redes sociales se quedan con la información de sus usuarios (y sus clientes), datos que usted podría usar a su favor.
-          </p>
+            <p>
+              Muchas redes sociales se quedan con la información de sus usuarios (y sus clientes), datos que usted podría usar a su favor.
+            </p>
+          </div>
         </div>
 
         <figure className="flex flex-col items-center w-2/5 mt-15 -skew-y-7">
@@ -102,7 +103,7 @@ const Projects = () => {
             Sea el primero, la web le permite optimizar los resultados de búsqueda de Google para que su emprendimiento aparezca primero.
           </p>
 
-          <p>
+          <p className="mt-15 font-sans text-2xl">
             Es sabido que los usuarios no suelen hindagar mucho en los resultados de búsqueda, mucho menos investigar luego del resultado número uno.
             Imagine que su emprendimiento es la primera impresión de un usuario, algo que en plena era de la información no tiene precio, usted está generando
             impresiones.

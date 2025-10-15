@@ -1,10 +1,14 @@
+import { motion } from "framer-motion";
+
 const FigureComponent = ({ title,
 imgSrc,
 description,
 pageLink,
 pageRepository }) => {
   return(
-    <figure className="flex flex-col items-center">
+    <figure
+      className="flex flex-col items-center"
+    >
       <h3 className="skew-y-7 text-3xl mb-2">{title}</h3>
 
       <img src={`${imgSrc}.jpg`} alt={`${imgSrc} page`} className="skew-y-7 w-full"/>

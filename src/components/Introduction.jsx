@@ -54,8 +54,6 @@ export const Introduction = () => {
           </pre>
         </div>
 
-        {/* <hr className="relative h-1 my-8 pt-1 w-9/10 bg-white border-0 opacity-80" /> */}
-
         <div className="flex flex-row mt-10 items-center w-full">
           <ul className="dark:text-gray-300 max-w-2xl bg-gray-800/75 text-white ml-10 font-mono w-2/7 mr-8">
             <ConsoleButton number={"一"} text={"Desarrollo Web"} />
