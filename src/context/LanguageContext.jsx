@@ -19,8 +19,7 @@ export const LanguageProvider = ({ children }) => {
       }
 
       // default language
-      return navigator.language || navigator.userLanguage; 
-
+      return navigator.language || navigator.userLanguage;
     }
 
     // por defecto

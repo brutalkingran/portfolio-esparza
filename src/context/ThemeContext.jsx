@@ -8,9 +8,9 @@ export const ThemeProvider = ({ children }) => {
 	const [darkMode, setDarkMode] = useState(() => {
 		// Detectar preferencia del sistema en localStorage
 		if ( typeof window !== 'undefined' ) {
-			return localStorage.getItem('theme') === 'dark' ||
+			return localStorage.getItem('theme') === 'light' ||
 				(!localStorage.getItem('theme') &&
-				window.matchMedia('(prefers-color-scheme: dark)').matches);
+				window.matchMedia('(prefers-color-scheme: light)').matches);
 		}
 		return false;
 	});

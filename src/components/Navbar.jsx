@@ -4,9 +4,12 @@ import { AiOutlineHome } from "react-icons/ai";
 import { AiOutlineHeart } from "react-icons/ai";
 import { IoLanguageOutline } from "react-icons/io5";
 import { VscColorMode } from "react-icons/vsc";
+import { ThemeContext } from "../context/ThemeContext";
+import { useContext } from 'react';
 
 const Navbar = () => {
-  const { setCurrentLanguage } = useLanguageContext;
+  const { setCurrentLanguage, currentLanguage } = useLanguageContext;
+  const { setDarkMode, darkMode } = useContext(ThemeContext);
 
   const onScrollTo = (targetId) => {
     const section = document.getElementById(targetId);
@@ -20,11 +23,6 @@ const Navbar = () => {
     window.open(site, "_blank")
   }
 
-  const onChangeOption = (state, value) => {
-    state(value)
-  }
-
-
   return (
     <nav className="bg-gray-900 text-white flex fixed md:h-full w-full md:w-[100px] md:right-0 bottom-0 z-50 md:skew-x-2 md:-mr-4">
       <ul className="flex md:flex-col items-center justify-around md:text-3xl text-2xl w-full h-full md:my-5">
@@ -37,7 +35,7 @@ const Navbar = () => {
 
         <NavButton
           tooltip={"Modo Claro/Oscuro"}
-          action={() => onGoToSite("https://www.google.com")}
+          action={() => setDarkMode(!darkMode)}
         >
           <VscColorMode />
         </NavButton>
@@ -51,7 +49,7 @@ const Navbar = () => {
 
         <NavButton
           tooltip={"Change Language"}
-          action={() => onGoToSite("https://www.google.com")}
+          action={() => setCurrentLanguage(!currentLanguage)}
         >
           <IoLanguageOutline />
         </NavButton>
