@@ -6,9 +6,17 @@ import { MdKeyboardArrowDown } from "react-icons/md";
 import BlinkingText from "./ui/BlinkingText";
 import { ConsoleButton, ContactLink } from "./ui/Buttons";
 
-export const Introduction = () => { 
+export const Introduction = () => {
+  const onScrollTo = (targetId) => {
+    const section = document.getElementById(targetId);
+
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  }
+
   return (
-    <section className="h-screen bg-black relative font-extralight overflow-x-hidden md:mb-0 mb-20">
+    <section id="inicio" className="h-screen bg-black relative font-extralight overflow-x-hidden md:mb-0 mb-20">
       <video width="1920" height="1080" autoPlay muted loop className="absolute top-0 left-0 w-full h-full object-cover z-0">
         <source src="space.mp4" type="video/mp4" />
         Your browser does not support the video tag.
@@ -97,10 +105,13 @@ export const Introduction = () => {
           </ul>
         </div>
 
-        <div className="absolute md:bottom-5 bottom-4 md:bottom-0 center-0 w-screen text-black text-center flex flex-col items-center md:text-black text-white cursor-pointer">
+        <button 
+          className="absolute md:bottom-5 bottom-4 md:bottom-0 center-0 w-screen text-black text-center flex flex-col items-center md:text-black text-white cursor-pointer"
+          onClick={() => onScrollTo("proyectos")}
+        >
           <span className="text-2xl">Mis proyectos</span>
           <MdKeyboardArrowDown size={24}/>
-        </div>
+        </button>
       </div>
     </section>
   );

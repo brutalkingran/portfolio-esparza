@@ -1,6 +1,6 @@
 import { AiOutlineArrowLeft } from "react-icons/ai";
 import { AiOutlineArrowRight } from "react-icons/ai";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "motion/react";
 
 const variants = {
@@ -22,8 +22,12 @@ const FigureSweepComponent = ({ children }) => {
   const items = Array.isArray(children) ? children : [children]; // normalizar array
   const [currentPage, setCurrentPage] = useState(0);
   const [direction, setDirection] = useState(1);
+  const [onScreen, setOnScreen] = useState(false)
+  const [count, setCount] = useState(0)
+  const [canceled, setCanceled] = useState(false)
 
-  const onChangePage = (n) => {
+  const onChangePage = (n, stopAuto = false) => {
+    if (stopAuto) setCanceled(true);
     setDirection(n);
     setCurrentPage((prev) => {
       let next = prev + n;
@@ -32,6 +36,21 @@ const FigureSweepComponent = ({ children }) => {
       return next;
     });
   };
+
+  useEffect(() => {
+    let interval;
+
+    if (onScreen && !canceled) {
+      interval = setInterval(() => {
+        onChangePage(1);
+      }, 5000);
+    } else {
+      setCurrentPage(0);
+    }
+
+    return () => clearInterval(interval);
+  }, [onScreen, canceled]);
+
 
   return (
     <motion.div
@@ -42,19 +61,27 @@ const FigureSweepComponent = ({ children }) => {
         scale: [0.5, 1],
       }}
       viewport={{ margin: "-400px" }}
+      onViewportEnter={() => {
+        setOnScreen(true);
+      }}
+      onViewportLeave={() => {
+        setOnScreen(false);
+      }}
     >
       {items.length > 1 && (
         <>
           <AiOutlineArrowLeft
             size={45}
-            className="absolute -left-15 top-1/2 transform -translate-y-1/2 cursor-pointer hover:scale-85 transition-all z-20 bg-white border border-black rounded-full"
-            onClick={() => onChangePage(-1)}
+            className="absolute -left-10 top-1/2 transform -translate-y-1/2 cursor-pointer hover:scale-85 transition-all z-20 bg-white border border-black rounded-full"
+            onClick={() => onChangePage(-1, true)}
+            color="black"
           />
 
           <AiOutlineArrowRight
             size={45}
             className="absolute cursor-pointer hover:scale-85 transition-all -right-5 top-1/2 z-20 bg-white border border-black rounded-full"
-            onClick={() => onChangePage(1)}
+            onClick={() => onChangePage(1, true)}
+            color="black"
           />
         </>
       )}

@@ -5,7 +5,7 @@ import SectionComponent from "./SectionComponent";
 const Projects = () => {
   return (
   <>
-    <SectionComponent id="projects">
+    <SectionComponent id="proyectos">
       <div className="md:w-1/2">
         <h2 className="md:text-6xl text-3xl">
           Tu presencia en línea importa
@@ -97,11 +97,16 @@ const Projects = () => {
             description="Un sitio web es más que una página: es el punto de encuentro entre su marca y su público.
             Un lugar donde sus ideas, productos y servicios viven bajo sus propias reglas."
           />
+          <FigureComponent
+            title="... en cualquier lugar"
+            imgSrc="websamplephone"
+            description="Tu sitio web se puede adaptar a cualquier plataforma."
+          />
         </FigureSweepComponent>
       </div>
     </section>
 
-    <section id="projects" className="py-16 bg-white dark:bg-gray-900 text-gray-900 relative h-screen clip-diagonal skew-y-6 -mt-25 font-light">
+    <section id="s" className="py-16 bg-white dark:bg-gray-900 text-gray-900 relative h-screen clip-diagonal skew-y-6 -mt-25 font-light">
       <div className="-skew-y-6 pt-20 px-10 flex flex-row justify-between">
         <div className="w-1/2">
           <h2 className="text-6xl">

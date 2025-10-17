@@ -1,12 +1,22 @@
-export const NavButton = ({ extraStyle, text, action }) => {
+export const NavButton = ({ children, extraStyle, action, tooltip }) => {
   return (
-    <button
-      onClick={ () => action }
-      className={ `mr-1 px-2 py-1 transition-all hover:bg-blue-600 rounded cursor-pointer bg-blue-400 ${extraStyle}` }> 
-        { text }
-    </button>
-  )
-}
+    <li className="w-full relative group">
+      <button
+        className={`flex items-center justify-center w-full hover:text-teal-400 md:h-[100px] h-[50px] cursor-pointer ${extraStyle}`}
+        onClick={action}
+      >
+        {children}
+      </button>
+
+      {/* Tooltip */}
+      <span
+        className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-full mr-2 bg-gray-800 text-white text-sm px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200 whitespace-nowrap pointer-events-none z-[999]"
+      >
+        { tooltip }
+      </span>
+    </li>
+  );
+};
 
 export const ContactLink = ({ extraStyle, text, logo, action}) => {
   return (
