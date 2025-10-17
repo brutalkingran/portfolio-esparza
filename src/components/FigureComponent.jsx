@@ -17,20 +17,26 @@ pageRepository }) => {
         <div>
           {description}
         </div>
+        
+        {
+          pageLink &&
+          <div>
+            ¿Querés probar el sitio?
+            <a className="text-blue-600 underline ml-1" href={`https://${pageLink}/`}>
+              {pageLink}
+            </a>
+          </div>
+        }
 
-        <div>
-          ¿Querés probar el sitio?
-          <a className="text-blue-600 underline ml-1" href={`https://${pageLink}/`}>
-            {pageLink}
-          </a>
-        </div>
-
-        <div>
-          ¿Querés revisar el código? 
-          <a className="text-blue-600 underline ml-1" href={`https://github.com/brutalkingran/${pageRepository}`}>
-            Repositorio
-          </a>
-        </div>
+        {
+          pageRepository &&
+          <div>
+            ¿Querés revisar el código? 
+            <a className="text-blue-600 underline ml-1" href={`https://github.com/brutalkingran/${pageRepository}`}>
+              Repositorio
+            </a>
+          </div>
+        }
       </figcaption>
     </figure>
   );

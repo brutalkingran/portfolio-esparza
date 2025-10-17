@@ -11,12 +11,10 @@ export const NavButton = ({ extraStyle, text, action }) => {
 export const ContactLink = ({ extraStyle, text, logo, action}) => {
   return (
     <li className={ `flex flex-row items-center bg-rose-600 rounded-full p-2 w-full hover:bg-rose-800 transition-all ${extraStyle}` } >
-      <a className="items-center" href={action}>
+      <a className="items-center flex flex-row w-full h-full" target="_blank" href={action}>
         {logo}
+        <span className="hidden md:block">{text}</span>
       </a>
-      <span className="hidden md:block">
-        {text}
-      </span>
     </li>
   )
 }
@@ -24,7 +22,7 @@ export const ContactLink = ({ extraStyle, text, logo, action}) => {
 export const ConsoleButton = ({ number, text }) => {
   return(
     <li className="py-5 px-5 flex flex-row items-center hover:bg-gray-900">
-      <span className="rounded-full bg-white text-black px-1 text-2xl mr-5">
+      <span className="rounded-full bg-white text-black md:px-1 px-1 text-2xl mr-5">
         { number }
       </span>
 

@@ -8,7 +8,7 @@ import { ConsoleButton, ContactLink } from "./ui/Buttons";
 
 export const Introduction = () => { 
   return (
-    <section className="h-screen bg-black relative font-extralight overflow-x-hidden">
+    <section className="h-screen bg-black relative font-extralight overflow-x-hidden md:mb-0 mb-20">
       <video width="1920" height="1080" autoPlay muted loop className="absolute top-0 left-0 w-full h-full object-cover z-0">
         <source src="space.mp4" type="video/mp4" />
         Your browser does not support the video tag.
@@ -54,7 +54,7 @@ export const Introduction = () => {
           </pre>
         </div>
 
-        <div className="flex flex-row mt-10 items-center w-full">
+        <div className="flex flex-row md:mt-10 items-center w-full">
           <ul className="dark:text-gray-300 max-w-2xl md:bg-gray-800/75 text-white md:ml-10 font-mono w-2/7 mr-8">
             <ConsoleButton number={"一"} text={"Desarrollo Web"} />
             <ConsoleButton number={"二"} text={"Consultas técnicas"} />
@@ -65,31 +65,31 @@ export const Introduction = () => {
           </ul>
 
           <ul className="text-white text-2xl w-screen">
-            <li className="italic ml-8 md:ml-0">Lleva tu negocio al siguiente nivel</li>
+            <li className="italic md:ml-8 ml-15 md:ml-0 text-xl md:text-2xl">Lleva tu negocio al siguiente nivel</li>
 
             <ContactLink
-              extraStyle="md:ml-10 ml-30 mt-5"
+              extraStyle="md:ml-10 ml-20 mt-5"
               text="WhatsApp: (+54) 383 409 1942"
               logo={<AiOutlineWhatsApp size={50} className="mr-2"/>}
               action="https://wa.me/543834091942"
             />
 
             <ContactLink
-              extraStyle="md:ml-15 ml-35 mt-2"
+              extraStyle="md:ml-15 ml-25 mt-2"
               text="LinkedIn: @patrisesp"
               logo={<AiOutlineLinkedin size={50} className="mr-2" /> }
               action="https://www.linkedin.com/in/patrisesp/"
             />
 
             <ContactLink
-              extraStyle="md:ml-20 ml-40 mt-2"
+              extraStyle="md:ml-20 ml-30 mt-2"
               text="GitHub: @brutalkingran"
               logo={<AiOutlineGithub size={50} className="mr-2" /> }
               action="https://github.com/brutalkingran/"
             />
 
             <ContactLink
-              extraStyle="md:ml-25 ml-45 mt-2"
+              extraStyle="md:ml-25 ml-35 mt-2"
               text="E-Mail: esparzapatricio95@gmail.com"
               logo={<AiOutlineMail size={50} className="mr-2" /> }
               action="mailto:esparzapatricio95@gmail.com/"
@@ -97,7 +97,7 @@ export const Introduction = () => {
           </ul>
         </div>
 
-        <div className="absolute bottom-12 md:bottom-0 center-0 w-screen text-black text-center flex flex-col items-center">
+        <div className="absolute md:bottom-5 bottom-4 md:bottom-0 center-0 w-screen text-black text-center flex flex-col items-center md:text-black text-white cursor-pointer">
           <span className="text-2xl">Mis proyectos</span>
           <MdKeyboardArrowDown size={24}/>
         </div>
