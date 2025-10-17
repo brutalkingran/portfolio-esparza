@@ -6,56 +6,62 @@ const Projects = () => {
   return (
   <>
     <SectionComponent id="proyectos">
-      <div className="md:w-1/2">
-        <h2 className="md:text-6xl text-3xl">
+      {/* COLUMNA DE TEXTO */}
+      <div className="md:w-1/2 flex flex-col md:p-0 p-2 md:p-0">
+        <h2 className="md:text-6xl text-3xl font-bold leading-tight">
           Tu presencia en línea importa
         </h2>
 
-        <div className="md:mt-15 mt-5 font-sans md:text-2xl text-1xl">
-          <p>
+        {/* Contenedor con scroll interno */}
+        <div
+          className="mt-6 md:mt-2 font-sans md:text-2xl text-base overflow-y-auto pr-2"
+          style={{ maxHeight: "calc(66vh - 150px)" }}
+        >
+          <p className="leading-relaxed">
             Contar con <strong className="underline">tu propio sitio web</strong> para tu emprendimiento es una decisión que podría ahorrarte problemas a largo plazo.
             Después de todo, <strong className="font-black">es tu propio espacio</strong>, sin tener que lidiar con algoritmos traicioneros o diseños que no se ajusten a tus gustos.
           </p>
 
-          <p className="mt-5">
+          <p className="mt-5 leading-relaxed">
             Con tu propio sitio web, las posibilidades son <strong className="underline">infinitas</strong>: los resultados de búsqueda en <strong className="font-black">Google</strong> mostrarán a tu emprendimiento antes que otros,
             podrás generar ingresos pasivos con anuncios, e incluso podrías ahorrarte <strong className="underline">mil y un dolores de cabeza</strong>.
           </p>
 
-          <p className="mt-5">
+          <p className="mt-5 leading-relaxed">
             Pensá en ese <strong className="font-black">ChatBot</strong> que responde automáticamente las dudas de tus clientes, en una aplicación que facilita o automatiza tareas tediosas,
             o en un espacio donde <strong className="underline">centralizás todos tus contactos</strong> para que no tengan que preguntarte si contás con X red social.
           </p>
         </div>
       </div>
 
+      {/* COLUMNA DE PROYECTOS */}
       <FigureSweepComponent>
         <FigureComponent
           title="Proyecto: página de turismo"
           imgSrc="spatium"
           description="Sitio web que funciona a modo de plantilla completa (inicio, acerca de, contacto, etc.) para una plataforma de viajes. Funciona para móviles y dispositivos de escritorio. Cuenta con un diseño y estilo moderno que resultan cómodo y fácil de navegar."
-          pageLink="spatiumviajes.netlify.app"
+          pageLink="https://spatiumviajes.netlify.app"
           pageRepository="spatium-travel-website"
         />
         <FigureComponent
           title="Proyecto: landing page"
           imgSrc="guncat"
           description="Página principal de un sitio de ventas/e-commerce. Cuenta con una interfaz vistosa y animaciones que dotan al sitio web de profesionalidad."
-          pageLink="guncat.netlify.app"
+          pageLink="https://guncat.netlify.app"
           pageRepository="gun-cat"
         />
         <FigureComponent
           title="Proyecto: Aplicación de Streaming"
-          imgSrc="kinematic"  
+          imgSrc="kinematic"
           description="Plataforma de streaming similar a Netflix. Brinda una interfaz cómoda para el usuario, con vista disponible para móviles y escritorio. Cuenta con modo claro y oscuro."
-          pageLink="kinematic-movies.netlify.app"
+          pageLink="https://kinematic-movies.netlify.app"
           pageRepository="kinetic-movie-page"
         />
         <FigureComponent
           title="Proyecto: Tienda Virtual"
           imgSrc="cartx"
           description="Selección de productos para una tienda. Cuenta con modos claros y oscuros, así como una sencilla pero eficiente interfaz."
-          pageLink="cartx-store.netlify.app"
+          pageLink="https://cartx-store.netlify.app"
           pageRepository="shop-react"
         />
       </FigureSweepComponent>
