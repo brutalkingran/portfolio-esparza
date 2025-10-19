@@ -4,99 +4,103 @@ import SectionComponent from "./SectionComponent";
 
 const Projects = () => {
   return (
-  <>
-    <SectionComponent id="proyectos">
-      {/* COLUMNA DE TEXTO */}
-      <div className="md:w-1/2 flex flex-col md:p-0 p-2 md:p-0">
-        <h2 className="md:text-6xl text-3xl font-bold leading-tight">
-          Tu presencia en línea importa
-        </h2>
-
-        {/* Contenedor con scroll interno */}
-        <div
-          className="mt-6 md:mt-2 font-sans md:text-2xl text-base overflow-y-auto pr-2"
-          style={{ maxHeight: "calc(66vh - 150px)" }}
-        >
-          <p className="leading-relaxed">
-            Contar con <strong className="underline">tu propio sitio web</strong> para tu emprendimiento es una decisión que podría ahorrarte problemas a largo plazo.
-            Después de todo, <strong className="font-black">es tu propio espacio</strong>, sin tener que lidiar con algoritmos traicioneros o diseños que no se ajusten a tus gustos.
-          </p>
-
-          <p className="mt-5 leading-relaxed">
-            Con tu propio sitio web, las posibilidades son <strong className="underline">infinitas</strong>: los resultados de búsqueda en <strong className="font-black">Google</strong> mostrarán a tu emprendimiento antes que otros,
-            podrás generar ingresos pasivos con anuncios, e incluso podrías ahorrarte <strong className="underline">mil y un dolores de cabeza</strong>.
-          </p>
-
-          <p className="mt-5 leading-relaxed">
-            Pensá en ese <strong className="font-black">ChatBot</strong> que responde automáticamente las dudas de tus clientes, en una aplicación que facilita o automatiza tareas tediosas,
-            o en un espacio donde <strong className="underline">centralizás todos tus contactos</strong> para que no tengan que preguntarte si contás con X red social.
-          </p>
-        </div>
-      </div>
-
-      {/* COLUMNA DE PROYECTOS */}
-      <FigureSweepComponent>
-        <FigureComponent
-          title="Proyecto: página de turismo"
-          imgSrc="spatium"
-          description="Sitio web que funciona a modo de plantilla completa (inicio, acerca de, contacto, etc.) para una plataforma de viajes. Funciona para móviles y dispositivos de escritorio. Cuenta con un diseño y estilo moderno que resultan cómodo y fácil de navegar."
-          pageLink="https://spatiumviajes.netlify.app"
-          pageRepository="spatium-travel-website"
-        />
-        <FigureComponent
-          title="Proyecto: landing page"
-          imgSrc="guncat"
-          description="Página principal de un sitio de ventas/e-commerce. Cuenta con una interfaz vistosa y animaciones que dotan al sitio web de profesionalidad."
-          pageLink="https://guncat.netlify.app"
-          pageRepository="gun-cat"
-        />
-        <FigureComponent
-          title="Proyecto: Aplicación de Streaming"
-          imgSrc="kinematic"
-          description="Plataforma de streaming similar a Netflix. Brinda una interfaz cómoda para el usuario, con vista disponible para móviles y escritorio. Cuenta con modo claro y oscuro."
-          pageLink="https://kinematic-movies.netlify.app"
-          pageRepository="kinetic-movie-page"
-        />
-        <FigureComponent
-          title="Proyecto: Tienda Virtual"
-          imgSrc="cartx"
-          description="Selección de productos para una tienda. Cuenta con modos claros y oscuros, así como una sencilla pero eficiente interfaz."
-          pageLink="https://cartx-store.netlify.app"
-          pageRepository="shop-react"
-        />
-      </FigureSweepComponent>
-    </SectionComponent>
-
-    <section id="projects" className="py-16 bg-gray-400 dark:bg-gray-900 text-gray-100 relative h-screen clip-diagonal skew-y-6 -mt-25 font-light">
-      <div className="-skew-y-6 pt-20 px-10 flex flex-row-reverse justify-between">
-        <div className="w-1/2 mr-25">
-          <h2 className="text-6xl">
-            Tu sitio web, tu hogar.
+    <>
+      {/* --- SECCIÓN: PROYECTOS --- */}
+      <SectionComponent id="proyectos" extraStyleDiv="dark:bg-gray-900 dark:text-gray-100">
+        <div className="md:w-1/2 flex flex-col p-4">
+          <h2 className="md:text-6xl text-3xl font-bold leading-tight text-balance dark:text-white">
+            Tu presencia en línea importa
           </h2>
 
-          <div className="mt-15 font-sans text-2xl space-y-5">
+          <div
+            className="mt-6 md:mt-4 font-sans md:text-2xl text-base overflow-y-auto pr-2 leading-relaxed space-y-5 dark:text-gray-200"
+            style={{ maxHeight: "calc(66vh - 100px)" }}
+          >
             <p>
-              Obtenga <strong>información clave</strong> que le permita decidir con precisión cuál será el <em>próximo paso</em> que su negocio debe dar para seguir <strong>creciendo</strong>.
+              Contar con <strong className="underline dark:decoration-rose-400">tu propio sitio web</strong> para tu emprendimiento es una decisión que podría ahorrarte problemas a largo plazo.
+              Después de todo, <strong className="font-black dark:text-rose-400">es tu propio espacio</strong>, sin tener que lidiar con algoritmos traicioneros o diseños que no se ajusten a tus gustos.
             </p>
 
             <p>
-              Muchas redes sociales <em>conservan y controlan</em> los datos de sus usuarios (y también de sus clientes).
-              Sin embargo, esos mismos datos podrían estar <strong>en sus manos</strong> y servirle para <em>comprender mejor a su público</em> y <strong>potenciar sus ventas</strong>.
+              Con tu propio sitio web, las posibilidades son <strong className="underline dark:decoration-rose-400">infinitas</strong>: los resultados de búsqueda en <strong className="font-black dark:text-rose-400">Google</strong> mostrarán a tu emprendimiento antes que otros,
+              podrás generar ingresos pasivos con anuncios, e incluso podrías ahorrarte <strong className="underline dark:decoration-rose-400">mil y un dolores de cabeza</strong>.
             </p>
 
             <p>
-              Un sitio web propio le otorga <strong>control total sobre su marca</strong>: cómo se ve, qué comunica y cómo interactúa con sus visitantes.
-              Usted decide qué mostrar, cuándo hacerlo y qué tipo de experiencia ofrecer, sin depender de políticas cambiantes ni de plataformas externas.
-            </p>
-
-            <p>
-              Además, tener su propio espacio digital <em>refuerza la confianza y la credibilidad</em> de su emprendimiento.
-              Es la diferencia entre “alguien que vende en redes” y una marca con presencia profesional, preparada para crecer.
+              Pensá en ese <strong className="font-black dark:text-rose-400">ChatBot</strong> que responde automáticamente las dudas de tus clientes, en una aplicación que facilita o automatiza tareas tediosas,
+              o en un espacio donde <strong className="underline dark:decoration-rose-400">centralizás todos tus contactos</strong> para que no tengan que preguntarte si contás con X red social.
             </p>
           </div>
         </div>
 
-        <FigureSweepComponent>
+        <FigureSweepComponent className="flex justify-center items-center">
+          <FigureComponent
+            title="Proyecto: página de turismo"
+            imgSrc="spatium"
+            description="Sitio web que funciona a modo de plantilla completa (inicio, acerca de, contacto, etc.) para una plataforma de viajes. Funciona para móviles y dispositivos de escritorio. Cuenta con un diseño y estilo moderno que resultan cómodo y fácil de navegar."
+            pageLink="https://spatiumviajes.netlify.app"
+            pageRepository="spatium-travel-website"
+          />
+          <FigureComponent
+            title="Proyecto: landing page"
+            imgSrc="guncat"
+            description="Página principal de un sitio de ventas/e-commerce. Cuenta con una interfaz vistosa y animaciones que dotan al sitio web de profesionalidad."
+            pageLink="https://guncat.netlify.app"
+            pageRepository="gun-cat"
+          />
+          <FigureComponent
+            title="Proyecto: Aplicación de Streaming"
+            imgSrc="kinematic"
+            description="Plataforma de streaming similar a Netflix. Brinda una interfaz cómoda para el usuario, con vista disponible para móviles y escritorio. Cuenta con modo claro y oscuro."
+            pageLink="https://kinematic-movies.netlify.app"
+            pageRepository="kinetic-movie-page"
+          />
+          <FigureComponent
+            title="Proyecto: Tienda Virtual"
+            imgSrc="cartx"
+            description="Selección de productos para una tienda. Cuenta con modos claros y oscuros, así como una sencilla pero eficiente interfaz."
+            pageLink="https://cartx-store.netlify.app"
+            pageRepository="shop-react"
+          />
+        </FigureSweepComponent>
+      </SectionComponent>
+
+      {/* --- SECCIÓN: IDEAS --- */}
+      <SectionComponent
+        id="ideas"
+        extraStyleDiv="md:flex-row-reverse bg-gray-400 text-gray-100 dark:bg-gray-800 dark:text-gray-100"
+      >
+        <div className="md:w-1/2 flex flex-col p-4">
+          <h2 className="md:text-6xl text-3xl font-bold leading-tight text-balance dark:text-white">
+            Tu sitio web, tu hogar.
+          </h2>
+
+          <div
+            className="mt-6 md:mt-4 font-sans md:text-2xl text-base overflow-y-auto pr-2 leading-relaxed space-y-5 dark:text-gray-200"
+            style={{ maxHeight: "calc(66vh - 100px)" }}
+          >
+            <p>
+              Obtenga <strong className="dark:text-rose-400">información clave</strong> que le permita decidir con precisión cuál será el <em>próximo paso</em> que su negocio debe dar para seguir <strong className="dark:text-rose-400">creciendo</strong>.
+            </p>
+
+            <p>
+              Muchas redes sociales <em>conservan y controlan</em> los datos de sus usuarios (y también de sus clientes).
+              Sin embargo, esos mismos datos podrían estar <strong className="dark:text-rose-400">en sus manos</strong> y servirle para <em>comprender mejor a su público</em> y <strong className="dark:text-rose-400">potenciar sus ventas</strong>.
+            </p>
+
+            <p>
+              Un sitio web propio le otorga <strong className="dark:text-rose-400">control total sobre su marca</strong>: cómo se ve, qué comunica y cómo interactúa con sus visitantes.
+              Usted decide qué mostrar, cuándo hacerlo y qué tipo de experiencia ofrecer.
+            </p>
+
+            <p>
+              Además, tener su propio espacio digital <em>refuerza la confianza y la credibilidad</em> de su emprendimiento.
+              Es la diferencia entre “alguien que vende en redes” y una marca con presencia profesional.
+            </p>
+          </div>
+        </div>
+
+        <FigureSweepComponent className="flex justify-center items-center">
           <FigureComponent
             title="Su espacio, su identidad"
             imgSrc="websample"
@@ -109,45 +113,45 @@ const Projects = () => {
             description="Tu sitio web se puede adaptar a cualquier plataforma."
           />
         </FigureSweepComponent>
-      </div>
-    </section>
+      </SectionComponent>
 
-    <section id="s" className="py-16 bg-white dark:bg-gray-900 text-gray-900 relative h-screen clip-diagonal skew-y-6 -mt-25 font-light">
-      <div className="-skew-y-6 pt-20 px-10 flex flex-row justify-between">
-        <div className="w-1/2">
-          <h2 className="text-6xl">
-            ¿Demasiado complicado? <strong>¡Déjamelo a mí!</strong>
+      {/* --- SECCIÓN: INVERSIÓN --- */}
+      <SectionComponent id="inversión" extraStyleDiv="dark:bg-gray-900 dark:text-gray-100">
+        <div className="md:w-1/2 flex flex-col p-4">
+          <h2 className="md:text-6xl text-3xl font-bold leading-tight text-balance dark:text-white">
+            ¿Demasiado complicado? <strong className="dark:text-rose-400">¡Dejamelo a mí!</strong>
           </h2>
 
-          <p className="mt-15 font-sans text-2xl">
-            Soy un programador graduado como <em>Técnico en Informática</em>, especializado en <strong>diseño y desarrollo web</strong>.
-            A lo largo de mi formación, dentro como fuera de la universidad, he creado múltiples <em>sitios, sistemas y aplicaciones</em>.
-            Las bases de datos no representan un problema para mí, y mucho menos el <strong>diseño de interfaces modernas y funcionales</strong>.
-            Las nuevas tecnologías del mercado no son un obstáculo, sino una <em>motivación constante</em>.
-          </p>
+          <div
+            className="mt-6 md:mt-4 font-sans md:text-2xl text-base overflow-y-auto pr-2 leading-relaxed space-y-5 dark:text-gray-200"
+            style={{ maxHeight: "calc(66vh - 100px)" }}
+          >
+            <p>
+              Soy un programador graduado como <em>Técnico en Informática</em>, especializado en <strong className="dark:text-rose-400">diseño y desarrollo web</strong>.
+              A lo largo de mi formación he creado múltiples <em>sitios, sistemas y aplicaciones</em>.
+              Las bases de datos no representan un problema para mí, y mucho menos el <strong className="dark:text-rose-400">diseño de interfaces modernas y funcionales</strong>.
+            </p>
 
-          <p className="mt-5 font-sans text-2xl">
-            Cualquier duda o consulta que tengas, <strong>la resolveré con gusto</strong>.
-            Y respecto al precio, no te preocupes: los sitios web <em>pueden ser costosos</em>, pero siempre hay formas de <strong>optimizar recursos</strong>.
-            Desde algo tan simple como usar <em>enlaces de Mercado Pago</em> para procesar pagos en línea, hasta aprovechar <em>plataformas gratuitas</em> para alojar tu proyecto sin sacrificar calidad.
-          </p>
+            <p>
+              Cualquier duda o consulta que tengas, <strong className="dark:text-rose-400">la resolveré con gusto</strong>.
+              Y respecto al precio, no te preocupes: los sitios web <em>pueden ser costosos</em>, pero siempre hay formas de <strong className="dark:text-rose-400">optimizar recursos</strong>.
+              Desde algo tan simple como usar <em>enlaces de Mercado Pago</em> para procesar pagos en línea, hasta aprovechar <em>plataformas gratuitas</em> para alojar tu proyecto sin sacrificar calidad.
+            </p>
+          </div>
         </div>
 
-        <figure className="flex flex-col items-center w-2/5 mt-15 mr-20">
-          <h3 className="skew-y-7 text-3xl mb-2 text-center"><strong>Un sitio web no es un gasto, es una inversión</strong>.</h3>
-
-          <img src="cartx.jpg" alt="" className="skew-y-7 w-full" />
-
-          <figcaption className="skew-y-7 text-center mt-5 font-medium w-2/3">
-              Ya tiene suficientes desafíos que atender en su negocio; <em>no debería preocuparse también por tareas repetitivas</em> como mantener redes sociales, gestionar consultas o actualizar información.
-              Ahí es donde entro yo: <strong>mi trabajo consiste en automatizar procesos y simplificar su día a día</strong>, para que pueda enfocarse en lo que realmente importa.
-              <em>Cada minuto que ahorre hoy será una preocupación menos mañana.</em>
-          </figcaption>
-        </figure>
-      </div>
-    </section>
-  </>
+        <FigureSweepComponent className="flex justify-center items-center">
+          <FigureComponent
+            title="<strong>Un sitio web no es un gasto, es una inversión</strong>"
+            imgSrc="cartx"
+            description="Ya tiene suficientes desafíos que atender en su negocio; <em>no debería preocuparse también por tareas repetitivas</em> como mantener redes sociales, gestionar consultas o actualizar información.
+            Ahí es donde entro yo: <strong className='dark:text-rose-400'>mi trabajo consiste en automatizar procesos y simplificar su día a día</strong>, para que pueda enfocarse en lo que realmente importa.
+            <em>Cada minuto que ahorre hoy será una preocupación menos mañana.</em>"
+          />
+        </FigureSweepComponent>
+      </SectionComponent>
+    </>
   );
-}
+};
 
 export default Projects;

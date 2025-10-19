@@ -16,21 +16,21 @@ export const Introduction = () => {
   }
 
   return (
-    <section id="inicio" className="h-screen bg-black relative font-extralight overflow-x-hidden md:mb-0 mb-20">
+    <section id="inicio" className="h-screen bg-black relative font-extralight overflow-x-hidden">
       <video width="1920" height="1080" autoPlay muted loop className="absolute top-0 left-0 w-full h-full object-cover z-0">
         <source src="space.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
 
       <div className="relative flex flex-col h-screen items-start justify-center md:ml-8 z-10">
-        <div className="flex flex-col md:mb-10 md:my-28">
-          <h1 className="mb-4 text-white dark:text-whitetext-left md:text-9xl text-5xl">
+        <div className="flex flex-col md:mb-10 md:my-28 w-full">
+          <h1 className="mb-4 text-white dark:text-white text-left md:text-7xl xl:text-9xl text-5xl">
             <span className="bg-rose-600/75 p-0.5 text-shadow-lg/30">Patricio Esparza</span>
           </h1>
-          <p className="text-white md:mt-5 md:ml-0 ml-5 text-center text-2xl">
+          <p className="text-white md:mt-5 md:ml-0 ml-5 text-center text-2xl text-left">
             Desarrollador Web Freelancer<BlinkingText />
           </p>
-          <pre className="absolute right-1/6 top-35 text-white text-xs font-mono whitespace-pre leading-none z-10 opacity-70 hidden md:block">
+          <pre className="absolute right-1/8 top-1/10 text-white font-mono whitespace-pre leading-none z-10 opacity-70 hidden xl:block">
 {String.raw`
                  @@@@@@%@%%@@@@@                 
              @@#++++++++@++++++++*@@             
@@ -104,15 +104,15 @@ export const Introduction = () => {
             />
           </ul>
         </div>
-
-        <button 
-          className="absolute md:bottom-5 bottom-4 md:bottom-0 center-0 w-screen text-black text-center flex flex-col items-center md:text-black text-white cursor-pointer"
-          onClick={() => onScrollTo("proyectos")}
-        >
-          <span className="text-2xl">Mis proyectos</span>
-          <MdKeyboardArrowDown size={24}/>
-        </button>
       </div>
+
+      <button
+        className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center text-white cursor-pointer z-20"
+        onClick={() => onScrollTo("proyectos")}
+      >
+        <span className="text-2xl">Mis proyectos</span>
+        <MdKeyboardArrowDown size={24} color="white" />
+      </button>
     </section>
   );
 }

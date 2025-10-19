@@ -54,13 +54,13 @@ const FigureSweepComponent = ({ children }) => {
 
   return (
     <motion.div
-      className="figure-sweep-container relative flex md:flex-col items-center w-2/5 mt-15 mr-20"
+      className="figure-sweep-container relative flex flex-col items-center justify-center w-full md:w-[45%] mt-8 mx-auto"
       initial={{ opacity: 0 }}
       whileInView={{
         opacity: 1,
         scale: [0.5, 1],
       }}
-      viewport={{ margin: "-400px" }}
+      viewport={{ margin: "0px" }}
       onViewportEnter={() => {
         setOnScreen(true);
       }}

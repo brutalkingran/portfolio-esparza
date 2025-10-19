@@ -24,8 +24,8 @@ const Navbar = () => {
   }
 
   return (
-    <nav className="bg-gray-900 text-white flex fixed md:h-full w-full md:w-[100px] md:right-0 bottom-0 z-50 md:skew-x-2 md:-mr-4">
-      <ul className="flex md:flex-col items-center justify-around md:text-3xl text-2xl w-full h-full md:my-5">
+    <nav className="bg-gray-900 text-white flex fixed xl:h-full w-full xl:w-[100px] xl:right-0 bottom-0 z-50 xl:-mr-4">
+      <ul className="flex xl:flex-col items-center justify-around xl:text-3xl text-2xl w-full h-full xl:my-5">
         <NavButton
           tooltip={"Volver al Inicio"}
           action={() => onScrollTo("inicio")}
