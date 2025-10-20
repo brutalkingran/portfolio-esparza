@@ -6,9 +6,9 @@ description,
 pageLink,
 pageRepository }) => {
   return (
-    <figure className="flex flex-col items-center">
+    <figure className="flex flex-col items-center md:mt-0">
       <h3
-        className="skew-y-7 text-3xl mb-2"
+        className="skew-y-7 md:text-3xl text-2xl mb-2"
         dangerouslySetInnerHTML={{ __html: title }}
       />
 
@@ -18,7 +18,7 @@ pageRepository }) => {
         className="skew-y-7 h-full max-h-100"
       />
 
-      <figcaption className="skew-y-7 text-center mt-5 font-medium w-2/3">
+      <figcaption className="skew-y-7 text-center md:mt-5 mt-0 font-medium w-2/3">
         <div dangerouslySetInnerHTML={{ __html: description }} />
 
         {pageLink && (

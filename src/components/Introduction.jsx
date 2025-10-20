@@ -110,7 +110,7 @@ export const Introduction = () => {
         className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center text-white cursor-pointer z-20"
         onClick={() => onScrollTo("proyectos")}
       >
-        <span className="text-2xl">Mis proyectos</span>
+        <span className="text-2xl hidden md:block">Mis proyectos</span>
         <MdKeyboardArrowDown size={24} color="white" />
       </button>
     </section>

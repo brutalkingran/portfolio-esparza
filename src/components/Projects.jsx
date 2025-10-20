@@ -6,7 +6,7 @@ const Projects = () => {
   return (
     <>
       {/* --- SECCIÓN: PROYECTOS --- */}
-      <SectionComponent id="proyectos" extraStyleDiv="dark:bg-gray-900 dark:text-gray-100">
+      <SectionComponent id="proyectos" extraStyleDiv="dark:bg-gray-900 dark:text-gray-100 bg-white pb-50" > 
         <div className="md:w-1/2 flex flex-col p-4">
           <h2 className="md:text-6xl text-3xl font-bold leading-tight text-balance dark:text-white">
             Tu presencia en línea importa
@@ -33,7 +33,7 @@ const Projects = () => {
           </div>
         </div>
 
-        <FigureSweepComponent className="flex justify-center items-center">
+        <FigureSweepComponent extraStyle="mt-80">
           <FigureComponent
             title="Proyecto: página de turismo"
             imgSrc="spatium"
@@ -68,7 +68,7 @@ const Projects = () => {
       {/* --- SECCIÓN: IDEAS --- */}
       <SectionComponent
         id="ideas"
-        extraStyleDiv="md:flex-row-reverse bg-gray-400 text-gray-100 dark:bg-gray-800 dark:text-gray-100"
+        extraStyleDiv="md:flex-row-reverse bg-gray-400 text-gray-100 dark:bg-gray-800 dark:text-gray-100 pb-25"
       >
         <div className="md:w-1/2 flex flex-col p-4">
           <h2 className="md:text-6xl text-3xl font-bold leading-tight text-balance dark:text-white">
@@ -100,7 +100,7 @@ const Projects = () => {
           </div>
         </div>
 
-        <FigureSweepComponent className="flex justify-center items-center">
+        <FigureSweepComponent extraStyle="mt-50">
           <FigureComponent
             title="Su espacio, su identidad"
             imgSrc="websample"
@@ -116,7 +116,7 @@ const Projects = () => {
       </SectionComponent>
 
       {/* --- SECCIÓN: INVERSIÓN --- */}
-      <SectionComponent id="inversión" extraStyleDiv="dark:bg-gray-900 dark:text-gray-100">
+      <SectionComponent id="inversión" extraStyleDiv="dark:bg-gray-900 dark:text-gray-100 bg-white pb-45">
         <div className="md:w-1/2 flex flex-col p-4">
           <h2 className="md:text-6xl text-3xl font-bold leading-tight text-balance dark:text-white">
             ¿Demasiado complicado? <strong className="dark:text-rose-400">¡Dejamelo a mí!</strong>
@@ -140,10 +140,10 @@ const Projects = () => {
           </div>
         </div>
 
-        <FigureSweepComponent className="flex justify-center items-center">
+        <FigureSweepComponent extraStyle="mt-80">
           <FigureComponent
             title="<strong>Un sitio web no es un gasto, es una inversión</strong>"
-            imgSrc="cartx"
+            imgSrc="work_scrsht"
             description="Ya tiene suficientes desafíos que atender en su negocio; <em>no debería preocuparse también por tareas repetitivas</em> como mantener redes sociales, gestionar consultas o actualizar información.
             Ahí es donde entro yo: <strong className='dark:text-rose-400'>mi trabajo consiste en automatizar procesos y simplificar su día a día</strong>, para que pueda enfocarse en lo que realmente importa.
             <em>Cada minuto que ahorre hoy será una preocupación menos mañana.</em>"

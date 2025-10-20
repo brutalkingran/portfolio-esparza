@@ -18,7 +18,7 @@ const variants = {
   }),
 };
 
-const FigureSweepComponent = ({ children }) => {
+const FigureSweepComponent = ({ children, extraStyle }) => {
   const items = Array.isArray(children) ? children : [children]; // normalizar array
   const [currentPage, setCurrentPage] = useState(0);
   const [direction, setDirection] = useState(1);
@@ -54,7 +54,7 @@ const FigureSweepComponent = ({ children }) => {
 
   return (
     <motion.div
-      className="figure-sweep-container relative flex flex-col items-center justify-center w-full md:w-[45%] mt-8 mx-auto"
+      className={`figure-sweep-container relative flex flex-col items-center justify-center w-full md:w-[45%] md:mt-8 mx-auto ${extraStyle}`}
       initial={{ opacity: 0 }}
       whileInView={{
         opacity: 1,
@@ -72,14 +72,14 @@ const FigureSweepComponent = ({ children }) => {
         <>
           <AiOutlineArrowLeft
             size={45}
-            className="absolute -left-10 top-1/2 transform -translate-y-1/2 cursor-pointer hover:scale-85 transition-all z-20 bg-white border border-black rounded-full"
+            className="absolute md:-left-10 -left-1 top-1/2 skew-y-5 transform -translate-y-1/2 cursor-pointer hover:scale-85 transition-all z-20 bg-white border border-black rounded-full"
             onClick={() => onChangePage(-1, true)}
             color="black"
           />
 
           <AiOutlineArrowRight
             size={45}
-            className="absolute cursor-pointer hover:scale-85 transition-all -right-5 top-1/2 z-20 bg-white border border-black rounded-full"
+            className="absolute cursor-pointer hover:scale-85 transition-all md:-right-1 -right-1 skew-y-5 top-1/2 z-20 bg-white border border-black rounded-full"
             onClick={() => onChangePage(1, true)}
             color="black"
           />
