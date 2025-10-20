@@ -1,4 +1,4 @@
-import { useLanguageContext } from "../context/LanguageContext";
+import { LanguageContext } from "../context/LanguageContext";
 import { NavButton } from "./ui/Buttons";
 import { AiOutlineHome } from "react-icons/ai";
 import { AiOutlineHeart } from "react-icons/ai";
@@ -8,7 +8,7 @@ import { ThemeContext } from "../context/ThemeContext";
 import { useContext } from 'react';
 
 const Navbar = () => {
-  const { setCurrentLanguage, currentLanguage } = useLanguageContext;
+  const { setCurrentLanguage, currentLanguage } = useContext(LanguageContext);
   const { setDarkMode, darkMode } = useContext(ThemeContext);
 
   const onScrollTo = (targetId) => {

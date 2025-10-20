@@ -1,10 +1,12 @@
-import { motion } from "framer-motion";
+import { useTranslate } from "../hooks/useTranslate";
 
 const FigureComponent = ({ title,
 imgSrc,
 description,
 pageLink,
 pageRepository }) => {
+  const t = useTranslate();
+
   return (
     <figure className="flex flex-col items-center md:mt-0">
       <h3
@@ -23,7 +25,7 @@ pageRepository }) => {
 
         {pageLink && (
           <div>
-            ¿Querés probar el sitio?
+            {t("figuregen.test")}
             <a
               className="text-blue-600 underline ml-1"
               href={`https://${pageLink}/`}
@@ -37,14 +39,14 @@ pageRepository }) => {
 
         {pageRepository && (
           <div>
-            ¿Querés revisar el código?
+            { t("figuregen.code") }
             <a
               className="text-blue-600 underline ml-1"
               href={`https://github.com/brutalkingran/${pageRepository}`}
               target="_blank"
               rel="noopener noreferrer"
             >
-              Repositorio
+              Github
             </a>
           </div>
         )}

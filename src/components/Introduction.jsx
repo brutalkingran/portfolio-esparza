@@ -5,8 +5,11 @@ import { AiOutlineMail } from "react-icons/ai";
 import { MdKeyboardArrowDown } from "react-icons/md";
 import BlinkingText from "./ui/BlinkingText";
 import { ConsoleButton, ContactLink } from "./ui/Buttons";
+import { useTranslate } from "../hooks/useTranslate";
 
 export const Introduction = () => {
+  const t = useTranslate();
+
   const onScrollTo = (targetId) => {
     const section = document.getElementById(targetId);
 
@@ -25,10 +28,10 @@ export const Introduction = () => {
       <div className="relative flex flex-col h-screen items-start justify-center md:ml-8 z-10">
         <div className="flex flex-col md:mb-10 md:my-28 w-full">
           <h1 className="mb-4 text-white dark:text-white text-left md:text-7xl xl:text-9xl text-5xl">
-            <span className="bg-rose-600/75 p-0.5 text-shadow-lg/30">Patricio Esparza</span>
+            <span className="bg-rose-600/75 p-0.5 text-shadow-lg/30">{t("header.title")}</span>
           </h1>
           <p className="text-white md:mt-5 md:ml-0 ml-5 text-center text-2xl text-left">
-            Desarrollador Web Freelancer<BlinkingText />
+            {t("header.subtitle")}<BlinkingText />
           </p>
           <pre className="absolute right-1/8 top-1/10 text-white font-mono whitespace-pre leading-none z-10 opacity-70 hidden xl:block">
 {String.raw`
@@ -64,16 +67,16 @@ export const Introduction = () => {
 
         <div className="flex flex-row md:mt-10 items-center w-full">
           <ul className="dark:text-gray-300 max-w-2xl md:bg-gray-800/75 text-white md:ml-10 font-mono w-2/7 mr-8">
-            <ConsoleButton number={"一"} text={"Desarrollo Web"} />
-            <ConsoleButton number={"二"} text={"Consultas técnicas"} />
-            <ConsoleButton number={"三"} text={"Administración de redes sociales"} />
-            <ConsoleButton number={"四"} text={"Modernización de negocios"} />
-            <ConsoleButton number={"五"} text={"Digitalización de documentos"} />
-            <ConsoleButton number={"六"} text={"Edición de videos"} />
+            <ConsoleButton number={"一"} text={t("header.list.1")} />
+            <ConsoleButton number={"二"} text={t("header.list.2")} />
+            <ConsoleButton number={"三"} text={t("header.list.3")} />
+            <ConsoleButton number={"四"} text={t("header.list.4")} />
+            <ConsoleButton number={"五"} text={t("header.list.5")} />
+            <ConsoleButton number={"六"} text={t("header.list.6")} />
           </ul>
 
           <ul className="text-white text-2xl w-screen">
-            <li className="italic md:ml-8 ml-15 md:ml-0 text-xl md:text-2xl">Lleva tu negocio al siguiente nivel</li>
+            <li className="italic md:ml-8 ml-15 md:ml-0 text-xl md:text-2xl">{t("header.slogan")}</li>
 
             <ContactLink
               extraStyle="md:ml-10 ml-20 mt-5"
@@ -110,7 +113,7 @@ export const Introduction = () => {
         className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center text-white cursor-pointer z-20"
         onClick={() => onScrollTo("proyectos")}
       >
-        <span className="text-2xl hidden md:block">Mis proyectos</span>
+        <span className="text-2xl hidden md:block">{t("header.projects")}</span>
         <MdKeyboardArrowDown size={24} color="white" />
       </button>
     </section>

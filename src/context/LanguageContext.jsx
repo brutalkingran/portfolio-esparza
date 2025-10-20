@@ -1,40 +1,34 @@
-import { createContext, useState, useEffect, useContext, Children } from 'react';
+import { createContext, useState, useEffect, useContext } from 'react';
 
-const languages = [
-  "es",
-  "en"
-]
+const languages = ["es", "en"];
 
 export const LanguageContext = createContext();
 
-export const useLanguageContext = () => useContext(LanguageContext)
+export const useLanguageContext = () => useContext(LanguageContext);
 
 export const LanguageProvider = ({ children }) => {
-  const [ currentLanguage, setCurrentLanguage ] = useState(() => {
+  const [currentLanguage, setCurrentLanguage] = useState(() => {
     if (typeof window !== 'undefined') {
-      // localStorage
       const savedLang = localStorage.getItem('language');
-      if ( savedLang && languages.includes(savedLang) ) {
+      if (savedLang && languages.includes(savedLang)) {
         return savedLang;
       }
 
-      // default language
-      return navigator.language || navigator.userLanguage;
+      // detectar idioma del sistema
+      const systemLang = navigator.language?.slice(0, 2);
+      return languages.includes(systemLang) ? systemLang : "es";
     }
 
-    // por defecto
-		return "es";
+    return "es";
   });
 
   useEffect(() => {
     localStorage.setItem('language', currentLanguage);
-  }, [currentLanguage])
-  
+  }, [currentLanguage]);
 
   return (
     <LanguageContext.Provider value={{ currentLanguage, setCurrentLanguage }}>
-      { children }
+      {children}
     </LanguageContext.Provider>
-  )
-
-}
+  );
+};

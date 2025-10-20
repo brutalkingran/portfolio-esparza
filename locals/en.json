@@ -1,0 +1,77 @@
+{
+  "header": {
+    "title": "Patricio Esparza",
+    "subtitle": "Freelance Web Developer",
+    "list": {
+      "1": "Web Development",
+      "2": "Technical Consulting",
+      "3": "Social Media Management",
+      "4": "Business Modernization",
+      "5": "Document Digitalization",
+      "6": "Video Editing"
+    },
+    "slogan": "Take your business to the next level",
+    "projects": "My projects"
+  },
+  "body": {
+    "section1": {
+      "title": "Your online presence matters",
+      "desc": {
+        "part1": "Having <strong class='underline dark:decoration-rose-400'>your own website</strong> for your business is a decision that can save you long-term problems. After all, <strong class='font-black dark:text-rose-400'>it’s your own space</strong>, without having to deal with treacherous algorithms or designs that don’t match your taste.",
+        "part2": "With your own website, the possibilities are <strong class='underline dark:decoration-rose-400'>endless</strong>: search results on <strong class='font-black dark:text-rose-400'>Google</strong> will show your business before others, you can generate passive income through ads, and even save yourself <strong class='underline dark:decoration-rose-400'>a thousand and one headaches</strong>.",
+        "part3": "Think about that <strong class='font-black dark:text-rose-400'>ChatBot</strong> that automatically answers your clients’ questions, an app that makes or automates tedious tasks, or a space where <strong class='underline dark:decoration-rose-400'>you centralize all your contacts</strong> so they don’t have to ask if you’re on a particular social network."
+      },
+      "figure1": {
+        "title": "Project: Travel website",
+        "desc": "A full-template website (home, about, contact, etc.) for a travel platform. Works on both mobile and desktop devices. It features a modern design and layout that’s comfortable and easy to navigate."
+      },
+      "figure2": {
+        "title": "Project: Landing page",
+        "desc": "Main page for an e-commerce site. It features a visually appealing interface and animations that give the website a professional look."
+      },
+      "figure3": {
+        "title": "Project: Streaming App",
+        "desc": "A streaming platform similar to Netflix. Provides a comfortable interface for the user, available on both mobile and desktop. Includes light and dark modes."
+      },
+      "figure4": {
+        "title": "Project: Online Store",
+        "desc": "Product selection for a store. Includes light and dark modes, as well as a simple yet efficient interface."
+      }
+    },
+    "section2": {
+      "title": "Your website, your home.",
+      "desc": {
+        "part1": "Gain <strong className='dark:text-rose-400'>key insights</strong> that help you decide precisely what <em>next step</em> your business should take to keep <strong className='dark:text-rose-400'>growing</strong>.",
+        "part2": "Many social networks <em>keep and control</em> their users’ (and even their clients’) data. However, that same data could be <strong className='dark:text-rose-400'>in your hands</strong> and help you <em>better understand your audience</em> and <strong className='dark:text-rose-400'>boost your sales</strong>.",
+        "part3": "Having your own website gives you <strong className='dark:text-rose-400'>full control over your brand</strong>: how it looks, what it communicates, and how it interacts with visitors. You decide what to show, when to show it, and what kind of experience to offer.",
+        "part4": "In addition, having your own digital space <em>strengthens your business’s trust and credibility</em>. It’s the difference between “someone selling on social media” and a brand with a professional presence."
+      },
+      "figure1": {
+        "title": "Your space, your identity",
+        "desc": "A website is more than a page: it’s the meeting point between your brand and your audience. A place where your ideas, products, and services live under your own rules."
+      },
+      "figure2": {
+        "title": "... anywhere",
+        "desc": "Your website can adapt to any platform."
+      }
+    },
+    "section3": {
+      "title": "Too complicated? <strong className='dark:text-rose-400'>Leave it to me!</strong>",
+      "desc": {
+        "part1": "I’m a programmer graduated as an <em>IT Technician</em>, specialized in <strong className='dark:text-rose-400'>web design and development</strong>. Throughout my career I’ve built multiple <em>websites, systems, and applications</em>. Databases are no problem for me, and even less so <strong className='dark:text-rose-400'>designing modern and functional interfaces</strong>.",
+        "part2": "Any question or doubt you have, <strong className='dark:text-rose-400'>I’ll gladly help you solve it</strong>. And regarding price... don’t worry: websites <em>can be expensive</em>, but there are always ways to <strong className='dark:text-rose-400'>optimize resources</strong>. From something as simple as using <em>Mercado Pago links</em> to process online payments, to taking advantage of <em>free hosting platforms</em> without sacrificing quality."
+      },
+      "figure1": {
+        "title": "<strong>A website isn’t an expense, it’s an investment</strong>",
+        "desc": "You already have enough challenges running your business; <em>you shouldn’t also worry about repetitive tasks</em> like maintaining social media, handling inquiries, or updating information. That’s where I come in: <strong className='dark:text-rose-400'>my job is to automate processes and simplify your day-to-day work</strong>, so you can focus on what truly matters. <em>Every minute you save today is one less concern tomorrow.</em>"
+      }
+    }
+  },
+  "footer": {
+    "sourceCode": "Source code"
+  },
+  "figuregen": {
+    "test":"Want to check it for yourself?",
+    "code":"Want to check the source code?"
+  }
+}
