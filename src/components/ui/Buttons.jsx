@@ -1,9 +1,10 @@
-export const NavButton = ({ children, extraStyle, action, tooltip }) => {
+export const NavButton = ({ children, extraStyle, action, tooltip, ariaText }) => {
   return (
     <li className="w-full relative group">
       <button
         className={`flex items-center justify-center w-full hover:text-teal-400 xl:h-[100px] h-[50px] cursor-pointer ${extraStyle}`}
         onClick={action}
+        aria-label={ariaText}
       >
         {children}
       </button>

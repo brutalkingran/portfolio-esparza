@@ -20,7 +20,16 @@ export const Introduction = () => {
 
   return (
     <section id="inicio" className="h-screen bg-black relative font-extralight overflow-x-hidden">
-      <video width="1920" height="1080" autoPlay muted loop className="absolute top-0 left-0 w-full h-full object-cover z-0">
+      <video
+        width="1920"
+        height="1080"
+        autoPlay
+        muted
+        loop
+        playsinline
+        aria-hidden="true"
+        role="presentation"
+        className="absolute top-0 left-0 w-full h-full object-cover z-0">
         <source src="space.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>

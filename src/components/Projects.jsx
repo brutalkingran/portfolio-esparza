@@ -62,7 +62,7 @@ const Projects = () => {
       {/* --- SECCIÓN: IDEAS --- */}
       <SectionComponent
         id="ideas"
-        extraStyleDiv="md:flex-row-reverse bg-gray-400 text-gray-100 dark:bg-gray-800 dark:text-gray-100 pb-25"
+        extraStyleDiv="md:flex-row-reverse bg-gray-300 text-gray-100 dark:bg-gray-800 dark:text-gray-100 pb-25"
       >
         <div className="md:w-1/2 flex flex-col p-4">
           <h2 className="md:text-6xl text-3xl font-bold leading-tight text-balance dark:text-white">
