@@ -7,8 +7,8 @@ const Projects = () => {
   const t = useTranslate();
 
   return (
-    <>
-      {/* --- SECCIÓN: PROYECTOS --- */}
+    <main>
+      {/* --- SECCIÓN 1: PROYECTOS --- */}
       <SectionComponent id="proyectos" extraStyleDiv="dark:bg-gray-900 dark:text-gray-100 bg-white pb-50" > 
         <div className="md:w-1/2 flex flex-col p-4">
           <h2 className="md:text-6xl text-3xl font-bold leading-tight text-balance dark:text-white">
@@ -59,7 +59,7 @@ const Projects = () => {
         </FigureSweepComponent>
       </SectionComponent>
 
-      {/* --- SECCIÓN: IDEAS --- */}
+      {/* --- SECCIÓN 2: IDEAS --- */}
       <SectionComponent
         id="ideas"
         extraStyleDiv="md:flex-row-reverse bg-gray-300 text-gray-800 dark:bg-gray-800 dark:text-gray-100 pb-25"
@@ -97,7 +97,7 @@ const Projects = () => {
         </FigureSweepComponent>
       </SectionComponent>
 
-      {/* --- SECCIÓN: INVERSIÓN --- */}
+      {/* --- SECCIÓN 3: INVERSIÓN --- */}
       <SectionComponent id="inversión" extraStyleDiv="dark:bg-gray-900 dark:text-gray-100 bg-white pb-45">
         <div className="md:w-1/2 flex flex-col p-4">
           <h2 className="md:text-6xl text-3xl font-bold leading-tight text-balance dark:text-white"
@@ -122,7 +122,7 @@ const Projects = () => {
           />
         </FigureSweepComponent>
       </SectionComponent>
-    </>
+    </main >
   );
 };
 

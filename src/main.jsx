@@ -4,12 +4,14 @@ import './index.css'
 import App from './App.jsx'
 import { ThemeProvider } from './context/ThemeContext.jsx'
 import { LanguageProvider } from './context/LanguageContext.jsx'
+import LanguageSetter from './hooks/languageSetter.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <ThemeProvider>
       <LanguageProvider>
-        <App/>
+        <LanguageSetter/>
+          <App/>
       </LanguageProvider>
     </ThemeProvider>
   </StrictMode>,
