@@ -15,7 +15,7 @@ pageRepository }) => {
       />
 
       <img
-        src={`${imgSrc}.jpg`}
+        src={`${imgSrc}.webp`}
         alt={`${imgSrc} page`}
         className="skew-y-7 h-full max-h-100"
       />
