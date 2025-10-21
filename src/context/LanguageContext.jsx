@@ -22,12 +22,16 @@ export const LanguageProvider = ({ children }) => {
     return "es";
   });
 
+  const toggleLanguage = () => {
+    setCurrentLanguage(prev => (prev === "es" ? "en" : "es"));
+  };
+
   useEffect(() => {
     localStorage.setItem('language', currentLanguage);
   }, [currentLanguage]);
 
   return (
-    <LanguageContext.Provider value={{ currentLanguage, setCurrentLanguage }}>
+    <LanguageContext.Provider value={{ currentLanguage, setCurrentLanguage, toggleLanguage }}>
       {children}
     </LanguageContext.Provider>
   );

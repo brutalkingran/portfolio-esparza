@@ -17,21 +17,21 @@
     "section1": {
       "title": "Your online presence matters",
       "desc": {
-        "part1": "Having <strong class='underline dark:decoration-rose-400'>your own website</strong> for your business is a decision that can save you long-term problems. After all, <strong class='font-black dark:text-rose-400'>it’s your own space</strong>, without having to deal with treacherous algorithms or designs that don’t match your taste.",
-        "part2": "With your own website, the possibilities are <strong class='underline dark:decoration-rose-400'>endless</strong>: search results on <strong class='font-black dark:text-rose-400'>Google</strong> will show your business before others, you can generate passive income through ads, and even save yourself <strong class='underline dark:decoration-rose-400'>a thousand and one headaches</strong>.",
-        "part3": "Think about that <strong class='font-black dark:text-rose-400'>ChatBot</strong> that automatically answers your clients’ questions, an app that makes or automates tedious tasks, or a space where <strong class='underline dark:decoration-rose-400'>you centralize all your contacts</strong> so they don’t have to ask if you’re on a particular social network."
+        "part1": "Having <strong class='underline dark:decoration-rose-400'>your own website</strong> for your business is a decision that can save you long-term problems. After all, <strong class='font-black dark:text-rose-400'>it’s your own space</strong>, without having to deal with unreliable algorithms or designs that don’t match your taste.",
+        "part2": "With your own website, the possibilities are <strong class='underline dark:decoration-rose-400'>endless</strong>: search results on <strong class='font-black dark:text-rose-400'>Google</strong> will show your business before others, you can generate passive income through ads, and even save yourself <strong class='underline dark:decoration-rose-400'>thousands of headaches</strong>.",
+        "part3": "Think about that <strong class='font-black dark:text-rose-400'>ChatBot</strong> that automatically answers your clients’ questions, that app that simplifies/automates tedious tasks, or a space where <strong class='underline dark:decoration-rose-400'>you centralize all your social media posts and links</strong> so your clients always know where to find you!"
       },
       "figure1": {
         "title": "Project: Travel website",
-        "desc": "A full-template website (home, about, contact, etc.) for a travel platform. Works on both mobile and desktop devices. It features a modern design and layout that’s comfortable and easy to navigate."
+        "desc": "A full-template website (home, about, contact, etc.) for a travel platform. Works on mobile and desktop devices. It has a clean, easy-to-navigate design."
       },
       "figure2": {
         "title": "Project: Landing page",
-        "desc": "Main page for an e-commerce site. It features a visually appealing interface and animations that give the website a professional look."
+        "desc": "Main page for an e-commerce site. It features a visually appealing interface and an animated background, making it look professional."
       },
       "figure3": {
         "title": "Project: Streaming App",
-        "desc": "A streaming platform similar to Netflix. Provides a comfortable interface for the user, available on both mobile and desktop. Includes light and dark modes."
+        "desc": "A streaming platform similar to Netflix. Provides a comfortable interface for the user, available on both mobile and desktop. Light and dark modes included."
       },
       "figure4": {
         "title": "Project: Online Store",
@@ -42,7 +42,7 @@
       "title": "Your website, your home.",
       "desc": {
         "part1": "Gain <strong className='dark:text-rose-400'>key insights</strong> that help you decide precisely what <em>next step</em> your business should take to keep <strong className='dark:text-rose-400'>growing</strong>.",
-        "part2": "Many social networks <em>keep and control</em> their users’ (and even their clients’) data. However, that same data could be <strong className='dark:text-rose-400'>in your hands</strong> and help you <em>better understand your audience</em> and <strong className='dark:text-rose-400'>boost your sales</strong>.",
+        "part2": "Many social networks <em>keep and control</em> their users’ (and even their clients’) data. However, that same data could be <strong className='dark:text-rose-400'>in your hands</strong> and help you <em>better understand your clients</em> and <strong className='dark:text-rose-400'>boost your sales</strong>.",
         "part3": "Having your own website gives you <strong className='dark:text-rose-400'>full control over your brand</strong>: how it looks, what it communicates, and how it interacts with visitors. You decide what to show, when to show it, and what kind of experience to offer.",
         "part4": "In addition, having your own digital space <em>strengthens your business’s trust and credibility</em>. It’s the difference between “someone selling on social media” and a brand with a professional presence."
       },

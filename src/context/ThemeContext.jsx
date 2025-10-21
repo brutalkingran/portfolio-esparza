@@ -6,14 +6,17 @@ export const useThemeContext = () => useContext(ThemeContext)
 
 export const ThemeProvider = ({ children }) => {
 	const [darkMode, setDarkMode] = useState(() => {
-		// Detectar preferencia del sistema en localStorage
-		if ( typeof window !== 'undefined' ) {
-			return localStorage.getItem('theme') === 'light' ||
-				(!localStorage.getItem('theme') &&
-				window.matchMedia('(prefers-color-scheme: light)').matches);
+		if (typeof window !== "undefined") {
+			const storedTheme = localStorage.getItem("theme");
+			if (storedTheme) {
+				return storedTheme === "dark"; // true si guardado como dark
+			}
+			// Si no hay guardado, usar preferencia del sistema
+			return window.matchMedia("(prefers-color-scheme: dark)").matches;
 		}
-		return false;
+		return false; // default light en SSR
 	});
+
 
 	useEffect(() => {
 		const root = window.document.documentElement;

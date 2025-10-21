@@ -38,7 +38,7 @@ const Projects = () => {
           <FigureComponent
             title={t("body.section1.figure2.title")}
             imgSrc="guncat"
-            description=""
+            description={t("body.section1.figure2.desc")}
             pageLink="https://guncat.netlify.app"
             pageRepository="gun-cat"
           />
@@ -92,7 +92,7 @@ const Projects = () => {
           <FigureComponent
             title={t("body.section2.figure2.title")}
             imgSrc="websamplephone"
-            description={t("body.section2.figure1.desc")}
+            description={t("body.section2.figure2.desc")}
           />
         </FigureSweepComponent>
       </SectionComponent>

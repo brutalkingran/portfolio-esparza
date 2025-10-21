@@ -1,15 +1,15 @@
-import { LanguageContext } from "../context/LanguageContext";
 import { NavButton } from "./ui/Buttons";
 import { AiOutlineHome } from "react-icons/ai";
 import { AiOutlineHeart } from "react-icons/ai";
 import { IoLanguageOutline } from "react-icons/io5";
 import { VscColorMode } from "react-icons/vsc";
-import { ThemeContext } from "../context/ThemeContext";
-import { useContext } from 'react';
+import { useThemeContext } from "../context/ThemeContext";
+import { useLanguageContext } from "../context/LanguageContext";
 
 const Navbar = () => {
-  const { setCurrentLanguage, currentLanguage } = useContext(LanguageContext);
-  const { setDarkMode, darkMode } = useContext(ThemeContext);
+  const { currentLanguage, toggleLanguage } = useLanguageContext();
+
+  const { setDarkMode, darkMode } = useThemeContext();
 
   const onScrollTo = (targetId) => {
     const section = document.getElementById(targetId);
@@ -48,8 +48,12 @@ const Navbar = () => {
         </NavButton>
 
         <NavButton
-          tooltip={"Change Language"}
-          action={() => setCurrentLanguage(!currentLanguage)}
+          tooltip={
+            (currentLanguage == "es")
+            ? "Change Language"
+            : "Cambiar Idioma" 
+          }
+          action={toggleLanguage}
         >
           <IoLanguageOutline />
         </NavButton>
