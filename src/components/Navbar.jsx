@@ -24,7 +24,7 @@ const Navbar = () => {
   const onGoToSite = (site) => {
     window.open(site, "_blank")
   }
-
+  
   return (
     <nav className="bg-gray-900 text-white flex fixed xl:h-full w-full xl:w-[100px] xl:right-0 bottom-0 z-50 xl:-mr-4">
       <ul className="flex xl:flex-col items-center justify-around xl:text-3xl text-2xl w-full h-full xl:my-5">

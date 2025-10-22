@@ -4,7 +4,7 @@ export const NavButton = ({ children, extraStyle, action, tooltip, ariaText }) =
       <button
         className={`flex items-center justify-center w-full hover:text-teal-400 xl:h-[100px] h-[50px] cursor-pointer ${extraStyle}`}
         onClick={action}
-        aria-label={ariaText}
+        aria-label={ariaText || tooltip}
       >
         {children}
       </button>
@@ -22,9 +22,10 @@ export const NavButton = ({ children, extraStyle, action, tooltip, ariaText }) =
 export const ContactLink = ({ extraStyle, text, logo, action}) => {
   return (
     <li className={ `flex flex-row items-center bg-rose-600 rounded-full p-2 w-full hover:bg-rose-800 transition-all ${extraStyle}` } >
-      <a className="items-center flex flex-row w-full h-full" target="_blank" href={action}>
+      <a className="items-center flex flex-row w-full h-full" target="_blank" href={action} rel="noopener noreferrer">
         {logo}
         <span className="hidden md:block">{text}</span>
+        <span className="sr-only">{text}</span>
       </a>
     </li>
   )
