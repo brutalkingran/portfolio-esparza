@@ -20,6 +20,7 @@ export const Introduction = () => {
 
   return (
     <section id="inicio" className="h-screen bg-black relative font-extralight overflow-x-hidden">
+      {/* Fondo animado desktop */}
       <video
         width="1920"
         height="1080"
@@ -29,10 +30,19 @@ export const Introduction = () => {
         playsinline
         aria-hidden="true"
         role="presentation"
-        className="absolute top-0 left-0 w-full h-full object-cover z-0">
-        <source src="space.mp4" type="video/mp4" />
+        poster="space.jpg"
+        preload="metadata"
+        className="hidden md:block absolute top-0 left-0 w-full h-full object-cover z-0">
+        <source src="space.webm" type="video/webm" />
         Your browser does not support the video tag.
       </video>
+
+      {/* fondo móviles (sm) */}
+      <img
+        className="block md:hidden absolute top-0 left-0 w-full h-full bg-cover bg-center z-0"
+        style={{ backgroundImage: "url('space.jpg')" }}
+        aria-hidden="true"
+      ></img>
 
       <div className="relative flex flex-col h-screen items-start justify-center md:ml-8 z-10">
         <div className="flex flex-col md:mb-10 md:my-28 w-full">
