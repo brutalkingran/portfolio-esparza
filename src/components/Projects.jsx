@@ -124,21 +124,21 @@ const Projects = () => {
             title={t("body.section3.figure2.title")}
             imgSrc="IDEargentina-index"
             description={t("body.section3.figure2.desc")}
-            pageLink="https://swk.lyricaltokarev.com"
+            pageLink="http://swk.lyricaltokarev.com"
             pageRepository="viajes-php"
           />
           <FigureComponent
             title={t("body.section3.figure3.title")}
             imgSrc="IDEargentina-administration"
             description={t("body.section3.figure3.desc")}
-            pageLink="https://swk.lyricaltokarev.com"
+            pageLink="http://swk.lyricaltokarev.com"
             pageRepository="viajes-php"
           />
           <FigureComponent
             title={t("body.section3.figure4.title")}
             imgSrc="IDEargentina-user-panel"
             description={t("body.section3.figure4.desc")}
-            pageLink="https://swk.lyricaltokarev.com"
+            pageLink="http://swk.lyricaltokarev.com"
             pageRepository="viajes-php"
           />
         </FigureSweepComponent>

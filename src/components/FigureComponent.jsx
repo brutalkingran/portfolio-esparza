@@ -28,7 +28,7 @@ pageRepository }) => {
             {t("figuregen.test")}
             <a
               className="text-blue-600 underline ml-1"
-              href={`https://${pageLink}/`}
+              href={`${pageLink}/`}
               target="_blank"
               rel="noopener noreferrer"
             >
