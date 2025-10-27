@@ -58,12 +58,24 @@
     "section3": {
       "title": "¿Demasiado complicado? <strong className='dark:text-rose-300'>¡Dejamelo a mí!</strong>",
       "desc": {
-        "part1": "Soy un programador graduado como <em>Técnico en Informática</em>, especializado en <strong className='dark:text-rose-300'>diseño y desarrollo web</strong>. A lo largo de mi formación he creado múltiples <em>sitios, sistemas y aplicaciones</em>. Las bases de datos no representan un problema para mí, y mucho menos el <strong className='dark:text-rose-300'>diseño de interfaces modernas y funcionales</strong>.",
-        "part2": "Cualquier duda o consulta que tengas, <strong className='dark:text-rose-300'>la resolveré con gusto</strong>. Y respecto al precio, no te preocupes: los sitios web <em>pueden ser costosos</em>, pero siempre hay formas de <strong className='dark:text-rose-300'>optimizar recursos</strong>. Desde algo tan simple como usar <em>enlaces de Mercado Pago</em> para procesar pagos en línea, hasta aprovechar <em>plataformas gratuitas</em> para alojar tu proyecto sin sacrificar calidad."
+        "part1": "Soy un programador graduado como <em>Técnico en Informática</em>, especializado en <strong className='dark:text-rose-300'>diseño y desarrollo web</strong>. A lo largo de mi formación profesional he creado múltiples <em>sitios, sistemas y aplicaciones</em>, por ello cosas como bases de datos no representan un problema para mí, y mucho menos el <strong className='dark:text-rose-300'>diseño de interfaces modernas y funcionales</strong>.",
+        "part2": "Cualquier duda o consulta que tengas, <strong className='dark:text-rose-300'>la resolveré con gusto</strong>. Y respecto al precio, no te preocupes: los sitios web <em>pueden ser costosos</em>, pero siempre hay formas de <strong className='dark:text-rose-300'>ahorrar recursos</strong>. Desde algo tan simple como usar <em>enlaces de Mercado Pago</em> para procesar pagos en línea, hasta aprovechar <em>plataformas gratuitas</em> para alojar tu proyecto sin sacrificar calidad."
       },
       "figure1": {
         "title": "<strong>Un sitio web no es un gasto, es una inversión</strong>",
         "desc": "Ya tiene suficientes desafíos que atender en su negocio; <em>no debería preocuparse también por tareas repetitivas</em> como mantener redes sociales, gestionar consultas o actualizar información. Ahí es donde entro yo: <strong className='dark:text-rose-300'>mi trabajo consiste en automatizar procesos y simplificar su día a día</strong>, para que pueda enfocarse en lo que realmente importa. <em>Cada minuto que ahorre hoy será una preocupación menos mañana.</em>"
+      },
+      "figure2": {
+        "title":"Una aplicación web completa",
+        "desc":"IDE Argentina es una web de viajes ficticia que cuenta con un diseño cómodo, además de gestor de agenda de viajes, usuarios, administradores y mucho más!"
+      },
+      "figure3": {
+        "title": "Añadir viajes jamás había sido tan fácil",
+        "desc": "Este tipo de diseño se puede adaptar a cualquier mercado."
+      },
+      "figure4": {
+        "title": "Un gestor de usuarios necesita una buena presentación",
+        "desc": "¿Quién dice que las páginas para administradores no deben verse bien?"
       }
     }
   },

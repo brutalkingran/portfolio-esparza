@@ -64,6 +64,18 @@
       "figure1": {
         "title": "<strong>A website isn’t an expense, it’s an investment</strong>",
         "desc": "You already have enough challenges running your business; <em>you shouldn’t also worry about repetitive tasks</em> like maintaining social media, handling inquiries, or updating information. That’s where I come in: <strong className='dark:text-rose-300'>my job is to automate processes and simplify your day-to-day work</strong>, so you can focus on what truly matters. <em>Every minute you save today is one less concern tomorrow.</em>"
+      },
+      "figure2": {
+        "title": "A complete web app",
+        "desc": "IDE Argentina is a fictional travel website that features everything a well-made modern webpage needs: modern and user-friendly design, user and admin management and so much more, don't forget to check it out!"
+      },
+      "figure3": {
+        "title": "Adding new trips has never been easier!",
+        "desc": "This type of design adapts to any market, not only for travel websites, it can fit any market, such as product listing."
+      },
+      "figure4": {
+        "title": "A user administration panel needs a good presentation",
+        "desc": "Who said an admin panel doesn't need to look good?"
       }
     }
   },
