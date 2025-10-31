@@ -17,7 +17,7 @@ pageRepository }) => {
       <img
         src={`${imgSrc}.webp`}
         alt={`${imgSrc} page`}
-        className="skew-y-7 h-full max-h-100"
+        className="skew-y-7 h-full max-h-50 md:max-h-100"
       />
 
       <figcaption className="skew-y-7 text-center md:mt-5 mt-0 font-medium w-2/3">
